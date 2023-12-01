@@ -34,8 +34,8 @@ alpha_2 = [0, +30, +55, +70, +75, +65, +45, +10, 0]
 i_1 = [0., -20.2, -45.8, -92.0, -117.6, -68.4, -29.9, -6.1, 0.]
 i_2 = [0., +19.6, +45.9, +87.2, +115.0, +64.7, +28.0, +6.4, 0.]
 
-k = 0.68
-dk = 0.006
+k = 0.67
+dk = 0.02
 
 tan_1 = [math.tan(math.radians(alpha)) for alpha in alpha_1]
 tan_2 = [math.tan(math.radians(alpha)) for alpha in alpha_2]

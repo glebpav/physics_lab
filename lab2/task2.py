@@ -22,7 +22,7 @@ def get_mse_k_b(x, y):
     k = (Yi * Xi - len(x) * XiYi) / (pow(Xi, 2) - len(x) * Xi2)
     b = (XiYi * Xi - Yi * Xi2) / (pow(Xi, 2) - len(x) * Xi2)
 
-    S2 = (len(x) / (len(x) - 2)) * (Yi2 - pow(Yi, 2) - pow(k, 2)*(Xi2 - pow(Xi, 2)))
+    S2 = (len(x) / (len(x) - 1)) * (Yi2 - pow(Yi, 2) - pow(k, 2)*(Xi2 - pow(Xi, 2)))
     SK = S2 / (len(x) * (Xi2 - pow(Xi, 2)))
     dK = math.sqrt(abs(SK))
 
